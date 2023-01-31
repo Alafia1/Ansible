@@ -3,7 +3,7 @@ Contains Ansible Playbook and tutorial notes and study guide
 
 What is Ansible?
     - IT automation, configuration management and provisioning tools
-    - It uses 'playbooks' to deploy, manage, build, test and configure anything from full server environments to websites to custom complied source code for aplication
+    - It uses 'playbooks' to deploy, manage, build, test and configure anything from full server environments to websites to custom complied source code for application
 
 Why Ansible?
     - Provisioning
@@ -26,18 +26,20 @@ Push Based VS Pull Based
 
 Ansible Use Case
 
+Case 1:
 
+ 
 
-
+Case 2:
+ 
 How Ansible Works
 
-
-
+ 
 Ansible Management Node:
     Is the system where ansible is installed and all playbooks and inventory is kept
 
 Inventory:
-    Is the list of servers of host where ansible needs to make changes, manage for various automantiona nd configuration management tasks.
+    Is the list of servers of host where ansible needs to make changes, manage for various automation nd configuration management tasks.
     Default location of host inventory is /etc/ansible/hosts but you can specify a different location with -i flag or the ansible.cfg configuration file.
 
 Playbook:
@@ -46,8 +48,8 @@ Playbook:
 N/B: Ansible uses SSH to access the host to apply changes
 
 Ansible Modules:
-    - Modules also reffered as task plugins or library plugins ar ethe ones which actually get executed inside a playbook
-    - These are scripts taht come packages with Ansible and perform some kind of action on a host
+    - Modules also referred as task plugins or library plugins ar ethe ones which actually get executed inside a playbook
+    - These are scripts that come packages with Ansible and perform some kind of action on a host
     Example:
         - apt: installs or removes packages using the apt package manager
         - copy: copies a file from local machine to the host
@@ -66,4 +68,6 @@ Ansible Playbook
     - Human-readable and are developed in a basic text language
     -Command to run the playbook
         ansible-playbook file.yaml
+
+
 
