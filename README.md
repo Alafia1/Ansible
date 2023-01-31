@@ -27,12 +27,15 @@ Push Based VS Pull Based
 Ansible Use Case
 
 Case 1:
+
 ![use_case_1](https://user-images.githubusercontent.com/101114171/215788946-0f54ea7f-3a8f-44e8-9802-c65323222461.png)
  
 Case 2:
+
 ![use_case_2](https://user-images.githubusercontent.com/101114171/215789024-5c27f4c8-3580-48ec-80c9-1cf5f42d6cf5.png)
 
-How Ansible Works
+How Ansible Works:
+
 ![ansible_works](https://user-images.githubusercontent.com/101114171/215789104-a01748fa-cd69-4d4b-9b31-3d641c706dd3.jpg)
  
 Ansible Management Node:
