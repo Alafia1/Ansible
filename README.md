@@ -46,9 +46,9 @@
    Default location of host inventory is /etc/ansible/hosts but you can specify a different location with -i flag or the ansible.cfg configuration file.
 
 ## Playbook:
-    Contains the configuration/changes that you want to perform on each host
+   Contains the configuration/changes that you want to perform on each host
 
-**N/B:** Ansible uses SSH to access the host to apply changes
+**N/B:** Ansible uses SSH to access the host to apply changes[^1].
 
 ## Ansible Modules:
 - Modules also referred as task plugins or library plugins ar ethe ones which actually get executed inside a playbook
@@ -61,19 +61,19 @@
 
 ## Ansible AD_HOC Commands
 - An Ad-hoc command is something that you might type in to do something really quick but don't want to save for later.
-    Example:
-        ```
-        ansible all -s -n shell -a 'date'
-        ```
-        ```
-        ansible all -s -n shell -a 'service sshd status'
-        ```
+- Example:
+ ```
+ansible all -s -n shell -a 'date'
+```
+ ```
+ansible all -s -n shell -a 'service sshd status'
+ ```
 
 ## Ansible Playbook
 - Ansible's configuration, deployment and orchestration language is called ansible playbook
 - its written in YAML, declaratively define your configs. 
 - Human-readable and are developed in a basic text language
--Command to run the playbook
+- Command to run the playbook:
 ```       
 ansible-playbook file.yaml
 ```
