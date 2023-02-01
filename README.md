@@ -2,16 +2,16 @@
 ### Contains Ansible Playbook and tutorial notes and study guide
 
 ## What is Ansible?
-    - IT automation, configuration management and provisioning tools
-    - It uses 'playbooks' to deploy, manage, build, test and configure anything from full server environments to websites to custom complied source code for application
+    ⋅⋅* IT automation, configuration management and provisioning tools
+    ⋅⋅* It uses 'playbooks' to deploy, manage, build, test and configure anything from full server environments to websites to custom complied source code for application
 
 ## Why Ansible?
-    - Provisioning
-    - Configuration Management
-    - Continouns Delivery
-    - Application Deployment
-    - Security Compliance
-    - Scripts
+    ⋅⋅* Provisioning
+    ⋅⋅* Configuration Management
+    ⋅⋅* Continouns Delivery
+    ⋅⋅* Application Deployment
+    ⋅⋅* Security Compliance
+    ⋅⋅* Scripts
 
 ## Ansible Features
     - Agentless: no need for agent installation and management
