@@ -6,19 +6,19 @@
     ⋅⋅* It uses 'playbooks' to deploy, manage, build, test and configure anything from full server environments to websites to custom complied source code for application
 
 ## Why Ansible?
-    ⋅⋅* Provisioning
-    ⋅⋅* Configuration Management
-    ⋅⋅* Continouns Delivery
-    ⋅⋅* Application Deployment
-    ⋅⋅* Security Compliance
-    ⋅⋅* Scripts
+* Provisioning
+* Configuration Management
+  * Continouns Delivery
+* Application Deployment
+* Security Compliance
+  * Scripts
 
 ## Ansible Features
-    - Agentless: no need for agent installation and management
-    - Built on top of python and hence provide a lot of python's functionality
-    - Uses SSH for secure connections to servers
-    - Follow push based architecture for sending configurations
-    - Very easy and fast to setup, minimal requirements.
+- Agentless: no need for agent installation and management
+- Built on top of python and hence provide a lot of python's functionality
+- Uses SSH for secure connections to servers
+- Follow push based architecture for sending configurations
+- Very easy and fast to setup, minimal requirements.
 
 ### Push Based VS Pull Based
     - Tools like puppet and Chef are pull based, and agents need to be installed on each server/node that periodically checks for the configuration information from central server (master)
