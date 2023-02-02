@@ -1,0 +1,24 @@
+---
+- name: Install Terraform
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Download Terraform package
+    get_url:
+      url: https://releases.hashicorp.com/terraform/{{ terraform_version }}/terraform_{{ terraform_version }}_linux_amd64.zip
+      dest: /tmp/terraform.zip
+
+  - name: Extract Terraform package
+    unarchive:
+      src: /tmp/terraform.zip
+      dest: /usr/local/bin/
+      remote_src: yes
+
+  - name: Remove Terraform package
+    file:
+      path: /tmp/terraform.zip
+      state: absent
+
+  - name: Check Terraform version
+    shell: terraform version
