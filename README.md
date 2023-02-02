@@ -78,4 +78,18 @@ ansible all -s -n shell -a 'service sshd status'
 ansible-playbook file.yaml
 ```
 
+- Playbook Example: Installs NGINX on all node machines
 
+```
+---
+- hosts: webserver
+  tasks:
+  - name: Installs NGNIX
+    apt: pkg=nginx state=installed update_cache=true
+    notify:
+    - start nginx
+
+  handlers:
+  - name: start nginx
+    service: name=nginx state=started
+```
