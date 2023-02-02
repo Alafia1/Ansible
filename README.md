@@ -45,6 +45,18 @@
    Is the list of servers of host where ansible needs to make changes, manage for various automation nd configuration management tasks.
    Default location of host inventory is /etc/ansible/hosts but you can specify a different location with -i flag or the ansible.cfg configuration file.
 
+   - Example
+
+```
+[webserver]
+10.1.1.1
+10.1.1.30
+10.1.1.100
+
+[dbserver]
+10.1.1.2
+```
+
 ## Playbook:
    Contains the configuration/changes that you want to perform on each host
 
