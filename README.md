@@ -105,3 +105,9 @@ ansible-playbook file.yaml
   - name: start nginx
     service: name=nginx state=started
 ```
+
+## Learning Resources
+
+- [Official-Ansible-Documentation](https://docs.ansible.com/)
+- Ansible Playbook Tutorial [Edureka-Youtube](https://www.youtube.com/watch?v=dCQpaTTTv98&t=802s)
+- Ansible Series [DevOps-TechStack-Youtube](https://www.youtube.com/watch?v=Skr1PHFokac&t=19s)
