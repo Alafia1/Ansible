@@ -4,6 +4,15 @@
   become: yes
 
   tasks:
+  - name: Update package list
+    apt:
+      update_cache: yes
+
+  - name: Install unzip package
+    apt:
+      name: unzip
+      state: present
+       
   - name: Download Terraform package
     get_url:
       url: https://releases.hashicorp.com/terraform/{{ terraform_version }}/terraform_{{ terraform_version }}_linux_amd64.zip
