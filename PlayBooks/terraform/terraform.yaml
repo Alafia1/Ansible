@@ -15,7 +15,7 @@
        
   - name: Download Terraform package
     get_url:
-      url: https://releases.hashicorp.com/terraform/{{ terraform_version }}/terraform_{{ terraform_version }}_linux_amd64.zip
+      url: https://releases.hashicorp.com/terraform/1.4.0-alpha20221207/terraform_1.4.0-alpha20221207_linux_amd64.zip
       dest: /tmp/terraform.zip
 
   - name: Extract Terraform package
